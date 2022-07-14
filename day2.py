@@ -12,7 +12,7 @@ def part1():
         elif command == 'down':
             depth += value
         else:depth -= value
-    print(horizontal*horizontal)
+    print(depth*horizontal)
 
 #--- day2 part 2 ---#
 
