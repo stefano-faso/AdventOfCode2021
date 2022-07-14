@@ -5,12 +5,12 @@ with open('input2') as txt:
 
 horizontal,depth = 0,0
 
-for command in data:
-    if command[0] == 'forward':
-        horizontal+= int(command[1])
-    elif command[0] == 'down':
-        depth += int(command[1])
+for command,value in data:
+    if command == 'forward':
+        horizontal+= value
+    elif command == 'down':
+        depth += value
     else:
-        depth -= int(command[1])
+        depth -= value
 position = horizontal * depth
 print(horizontal,depth, position)
