@@ -7,7 +7,7 @@ horizontal,depth = 0,0
 
 for command,value in data:
     if command == 'forward':
-        horizontal+= value
+        horizontal += value
     elif command == 'down':
         depth += value
     else:
